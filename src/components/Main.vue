@@ -1,12 +1,10 @@
-<script setup></script>
+<script setup>
+import Navbar from "./layout/Navbar.vue"
+</script>
 
 <template>
   <q-page>
-      <q-breadcrumbs class="q-pa-md" active-color="secondary" style="font-size: 14px">
-        <q-breadcrumbs-el label="رجاء" />
-        <q-breadcrumbs-el label="خانه" icon="home" />
-        <q-breadcrumbs-el label="جست و جو" icon="search" />
-      </q-breadcrumbs>
+      <Navbar/>
   </q-page>
 </template>
 

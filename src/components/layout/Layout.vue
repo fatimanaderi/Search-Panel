@@ -7,7 +7,7 @@
   </q-layout>
 </template>
 <script setup>
-import Main from "./Main.vue";
+import Main from "../Main.vue";
 import Header from "./Header.vue"
 
 </script>
