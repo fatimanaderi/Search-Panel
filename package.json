@@ -16,6 +16,7 @@
   "devDependencies": {
     "@quasar/vite-plugin": "^1.6.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "postcss-rtlcss": "^4.0.8",
     "sass": "1.32.12",
     "vite": "^4.4.5"
   }

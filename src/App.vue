@@ -1,13 +1,11 @@
 <script setup>
-import Header from './components/Header.vue';
-import Main from './components/Main.vue'
+import Layout from "./components/Layout.vue";
 </script>
 
 <template>
-  <Header/>
-  <Main/>
+  <div corner="top">
+    <Layout />
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
