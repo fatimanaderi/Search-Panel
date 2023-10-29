@@ -12,6 +12,7 @@
           v-on:update:model-value="toggleMode"
           v-model="themeMode"
           color="secondary"
+          :icon="themeMode == true ? 'light_mode' : 'nightlight'"
         />
       </q-toolbar-title>
       <q-form @submit="getSearchResult(input)" @reset="onReset" class="w-80">
