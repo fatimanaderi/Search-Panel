@@ -12,8 +12,3 @@
 import Main from "../Main.vue";
 import Header from "./Header.vue";
 </script>
-<style>
-.w-80 {
-  width: 60%;
-}
-</style>
