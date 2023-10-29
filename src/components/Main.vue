@@ -10,7 +10,7 @@ const {searchedData} = useSearch();
     <h6 class="text-center text-bold" v-if="!searchedData">
       شما هنوز عبارت خود را جست وجو نکرده اید!
     </h6>
-    <div v-else>
+    <div class="q-mt-md" v-else>
       <div v-for="item in searchedData.results">
       {{ item.task.domain }}
     </div>
