@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@neshan-maps-platform/vue3-openlayers':
+    specifier: ^1.0.6
+    version: 1.0.6(vue@3.3.7)
   '@quasar/extras':
     specifier: ^1.16.7
     version: 1.16.7
@@ -260,6 +263,14 @@ packages:
 
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
+
+  /@neshan-maps-platform/vue3-openlayers@1.0.6(vue@3.3.7):
+    resolution: {integrity: sha512-DB5J56dxVXGiu5WRJJryfpBaimlTzmi3JZ6zRPYPt5nUT9hUtLsg5acmZYf4sHSrmYUkd9ToVjzsVyr7pXdo0w==}
+    peerDependencies:
+      vue: 3.x
+    dependencies:
+      vue: 3.3.7
+    dev: false
 
   /@quasar/extras@1.16.7:
     resolution: {integrity: sha512-nYF3gVE/si1YJ/D4qmAiHGwxoJIDCvTT8NI6ZmbTMPrur4J8xBKhfhfhyLoQ4k2jJZP6Rx0rUcB71FBNC2C8vQ==}
