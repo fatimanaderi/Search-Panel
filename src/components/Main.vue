@@ -1,7 +1,8 @@
 <script setup>
 import Navbar from "./layout/Navbar.vue";
 import useSearch from "../composiable/Search";
-const {searchedData} = useSearch();
+import Card from "./Card.vue"
+const { searchedData } = useSearch();
 </script>
 
 <template>
@@ -10,12 +11,10 @@ const {searchedData} = useSearch();
     <h6 class="text-center text-bold" v-if="!searchedData">
       شما هنوز عبارت خود را جست وجو نکرده اید!
     </h6>
-    <div class="q-mt-md" v-else>
-      <div v-for="item in searchedData.results">
-      {{ item.task.domain }}
-    </div>
+    <div class="q-mt-xl row" v-else>
+      <div class="col-12" v-for="item in searchedData.results">
+       <Card :website="item" :key="item._id"/>
+      </div>
     </div>
   </q-page>
 </template>
-
-<style scoped></style>
