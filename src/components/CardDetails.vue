@@ -10,7 +10,7 @@
         </div>
         <div>
           <div class="row items-center">
-            <div class="q-mr-sm">کشور : {{ data.country_name }}</div>
+            <div class="q-mx-sm">کشور : {{ data.country_name }}</div>
             <img
               v-if="imageLoading"
               class="flag-img"
@@ -20,8 +20,8 @@
             <div v-else>{{ findCountry(data.country_code).flag }}</div>
           </div>
           <div class="row items-center">
-            <div class="">قاره : {{ data.continent_name }}</div>
-            <div class="q-mx-sm">منطقه : {{ data.region_name }}</div>
+            <div class="q-mx-sm">قاره : {{ data.continent_name }}</div>
+            <div >منطقه : {{ data.region_name }}</div>
           </div>
         </div>
       </div>
