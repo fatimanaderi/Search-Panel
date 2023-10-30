@@ -26,14 +26,14 @@
             <div>منطقه : {{ data.region_name }}</div>
           </div>
         </div>
-        <div class=" w-map">
+        <div class="page w-map">
           <NeshanMap
-            mapKey="web.5b396628f36349f9a07e3c55ba624a38"
+            mapKey="web.ef3a4d6811d845a4a23dbb75b9d447c2"
             :center="{
               latitude: data.latitude,
               longitude: data.longitude,
             }"
-            :zoom="12"
+            :zoom="6"
             :scale="0.8"
           />
         </div>
