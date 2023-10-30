@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from "./layout/Navbar.vue";
-import useSearch from "../composiable/Search";
+import useSearch from "../composiable/useSearch";
 import Card from "./Card.vue"
 const { searchedData } = useSearch();
 </script>

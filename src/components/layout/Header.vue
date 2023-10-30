@@ -19,8 +19,7 @@
         />
       </q-toolbar-title>
       <q-form
-        @submit="getSearchResult(input)"
-        @reset="onReset"
+        @submit="submit"
         class="form-width"
       >
         <q-input
@@ -43,14 +42,14 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import useSearch from "../../composiable/Search";
+import useSearch from "../../composiable/useSearch";
 import { useQuasar } from "quasar";
 
 const { getSearchResult } = useSearch();
 const input = ref("");
-const onReset = () => {
-  console.log("rest");
-  input.value = null;
+const submit = () => {
+  getSearchResult(input);
+  input.value = "";
 };
 
 const q = useQuasar();

@@ -1,6 +1,6 @@
 import { reactive } from "vue";
 import api from "../services/api";
-import { data } from "../composiable/data";
+import { data } from "./data";
 import { useQuasar } from "quasar";
 const useSearch = () => {
   const searchedData = reactive({ ...data });

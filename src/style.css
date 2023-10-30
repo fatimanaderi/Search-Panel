@@ -10,3 +10,25 @@
 a{
   color:#040d12
 }
+.w-100 {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+.q-item__section--thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .q-item {
+    flex-wrap: wrap;
+  }
+  [dir="rtl"] .q-item > .q-focus-helper + .q-item__section--thumbnail {
+    margin-right: 0;
+  }
+}
+.flag-img{
+  width: 30px;
+  height: auto;
+}
