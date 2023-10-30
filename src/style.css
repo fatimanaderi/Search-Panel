@@ -1,5 +1,8 @@
 .body--dark {
   background: #040d12 !important;
+  .q-item--dark{
+    background-color: #040d12 !important;
+  }
 }
 .q-header{
   padding: 5px 0;
