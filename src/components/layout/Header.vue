@@ -14,6 +14,7 @@
           v-on:update:model-value="toggleMode"
           v-model="themeMode"
           color="secondary"
+          size="lg"
           :icon="themeMode == true ? 'light_mode' : 'nightlight'"
         />
       </q-toolbar-title>
@@ -23,7 +24,8 @@
         class="form-width"
       >
         <q-input
-          class="w-full rounded-borders"
+          class="w-full bg-indigo-1"
+          rounded
           color="grey-3"
           label-color="secondary"
           outlined
@@ -59,7 +61,7 @@ const toggleMode = () => q.dark.toggle();
 .form-width {
   width: 60%;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .form-width {
     width: 190% !important;
     margin: 10px;
@@ -70,6 +72,7 @@ const toggleMode = () => q.dark.toggle();
   .sm-space-between{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 
   }
 }
