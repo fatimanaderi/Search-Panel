@@ -36,7 +36,7 @@
           <q-item-label caption>{{ website.page.ip }}</q-item-label>
         </q-item-section>
       </template>
-      <CardDetails :data="searchedDetails"/>
+        <CardDetails v-if="Object.keys(searchedDetails).length != 0"  :data="searchedDetails"/>
     </q-expansion-item>
   </q-list>
 </template>
