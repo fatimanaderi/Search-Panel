@@ -3,7 +3,7 @@
     <q-expansion-item
       icon="explore"
       label="Counter"
-      header-class="bg-indigo-1 q-py-lg"
+      header-class="q-py-lg"
       expand-icon-class="text-primary"
       @before-show="getDataDetails"
     >
