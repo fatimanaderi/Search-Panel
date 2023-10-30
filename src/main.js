@@ -14,7 +14,7 @@ import './style.css'
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
 import App from './App.vue'
-
+import '@neshan-maps-platform/vue3-openlayers/dist/style.css'
 const myApp = createApp(App)
 
 myApp.use(Quasar, {

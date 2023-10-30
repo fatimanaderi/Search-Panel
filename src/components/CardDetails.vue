@@ -26,20 +26,39 @@
             <div>منطقه : {{ data.region_name }}</div>
           </div>
         </div>
+        <div class=" w-map">
+          <NeshanMap
+            mapKey="web.5b396628f36349f9a07e3c55ba624a38"
+            :center="{
+              latitude: data.latitude,
+              longitude: data.longitude,
+            }"
+            :zoom="12"
+            :scale="0.8"
+          />
+        </div>
       </div>
     </q-card-section>
   </q-card>
 </template>
 <script setup>
 import { onMounted, ref, watch } from "vue";
+import NeshanMap from "@neshan-maps-platform/vue3-openlayers";
 import findCountry from "../composiable/findCountry";
 const imageLoading = ref(false);
 const props = defineProps(["data"]);
-const imgsrc =ref(props.data?.location?.flag);
+const imgsrc = ref(props.data?.location?.flag);
 onMounted(() => {
-  imageLoading.value = true
+  imageLoading.value = true;
 });
 watch(imgsrc, () => {
   imageLoading.value = true;
 });
 </script>
+<style>
+.w-map {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+</style>

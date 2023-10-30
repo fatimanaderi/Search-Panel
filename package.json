@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@neshan-maps-platform/vue3-openlayers": "^1.0.6",
     "@quasar/extras": "^1.16.7",
     "axios": "^1.6.0",
     "quasar": "^2.13.0",
