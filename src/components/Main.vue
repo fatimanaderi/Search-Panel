@@ -8,7 +8,7 @@ const { searchedData } = useSearch();
 <template>
   <q-page>
     <Navbar />
-    <h6 class="text-center text-bold" v-if="!searchedData">
+    <h6 class="text-center text-bold" v-if="Object.keys(searchedData).length == 0">
       شما هنوز عبارت خود را جست وجو نکرده اید!
     </h6>
     <div class="q-mt-xl row" v-else>
