@@ -18,10 +18,7 @@
           :icon="themeMode == true ? 'light_mode' : 'nightlight'"
         />
       </q-toolbar-title>
-      <q-form
-        @submit="submit"
-        class="form-width"
-      >
+      <q-form @submit="submit" class="form-width">
         <q-input
           class="w-full bg-indigo-1"
           rounded
@@ -42,13 +39,11 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import useSearch from "../../composiable/useSearch";
 import { useQuasar } from "quasar";
-
-const { getSearchResult } = useSearch();
 const input = ref("");
+const emit = defineEmits(['getInput'])
 const submit = () => {
-  getSearchResult(input);
+  emit('getInput' , input.value)
   input.value = "";
 };
 
@@ -68,11 +63,10 @@ const toggleMode = () => q.dark.toggle();
   .q-toolbar {
     flex-wrap: wrap !important;
   }
-  .sm-space-between{
+  .sm-space-between {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-
   }
 }
 </style>
