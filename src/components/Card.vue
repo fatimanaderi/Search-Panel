@@ -18,7 +18,7 @@
 
         <q-item-section class="col-12 col-sm-9 col-md-8 q-pa-md">
           <q-item-label class="text-bold">
-            <a :href="website.task.url" target="_blank">
+            <a class="text-primary" :href="website.task.url" target="_blank">
               {{ website.page.title }}</a
             >
           </q-item-label>
